@@ -1,0 +1,51 @@
+name: 'Publish'
+
+on:
+  release:
+    types: [ created ]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'version: x.y.z'
+        required: true
+      tag:
+        description: 'tag'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 12
+          registry-url: 'https://npm.pkg.github.com'
+
+      - run: yarn install --frozen-lockfile --ignore-scripts --registry https://npm.pkg.github.com
+
+      - name: Set Git credentials
+        run: git config --global user.email "shonheldin@mail.ru"
+
+      - run: git config --global user.name "ilyapishchulin"
+      - run: yarn version --new-version ${{ github.event.inputs.version }} --no-commit-hooks
+
+      - name: Pushing changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+
+      - name: Publishing prerelase
+        run: yarn publish --non-interactive --tag ${{ github.event.inputs.tag }}
+        if: ${{ github.event.inputs.tag }}
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}
+
+      - name: Publishing release
+        run: yarn publish --non-interactive
+        if: ${{ !github.event.inputs.tag }}
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.DEVTOOLS_GITHUB_TOKEN }}

@@ -1,6 +1,6 @@
 {
-  "name": "@telegram/ui",
-  "version": "1.0.0",
+  "name": "telegram-ui",
+  "version": "1.0.0-draft1",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
@@ -23,5 +23,9 @@
   "dependencies": {
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "repository": "https://github.com/ilyapishchulin/TelegramUI",
+  "publishConfig": {
+    "ilyapishchulin:registry": "https://npm.pkg.github.com"
   }
 }
