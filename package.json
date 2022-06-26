@@ -1,6 +1,6 @@
 {
   "name": "telegram-ui",
-  "version": "1.0.0-draft1",
+  "version": "1.0.0-draft2",
   "license": "MIT",
   "main": "dist/index.js",
   "files": [
