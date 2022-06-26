@@ -1,0 +1,15 @@
+.tgSubhead {
+  font-size: 15px;
+}
+
+.tgSubhead--w-1 {
+  font-weight: 600;
+}
+
+.tgSubhead--w-2 {
+  font-weight: 500;
+}
+
+.tgSubhead--w-3 {
+  font-weight: 400;
+}

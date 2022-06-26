@@ -1,0 +1,23 @@
+.tgCallout {
+  font-size: 16px;
+}
+
+.tgCallout--android {
+  line-height: 19px;
+}
+
+.tgCallout--ios {
+  line-height: 21px;
+}
+
+.tgCallout--w-1 {
+  font-weight: 600;
+}
+
+.tgCallout--w-2 {
+  font-weight: 500;
+}
+
+.tgCallout--w-3 {
+  font-weight: 400;
+}

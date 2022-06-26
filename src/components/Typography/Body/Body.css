@@ -1,0 +1,16 @@
+.tgBody {
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.tgBody--w-1 {
+  font-weight: 600;
+}
+
+.tgBody--w-2 {
+  font-weight: 500;
+}
+
+.tgBody--w-3 {
+  font-weight: 400;
+}

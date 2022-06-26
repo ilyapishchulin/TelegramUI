@@ -1,0 +1,8 @@
+body {
+  --tg-ios-heading-font: 'SF Pro Display', -apple-system, system-ui;
+  --tg-ios-font: 'SF Pro Text', -apple-system, system-ui;
+  --tg-android-font: 'Roboto', system-ui;
+
+  --tg-theme-button-color: #4AA5DA;
+  --tg-theme-button-text-color: #FFFFFF;
+}

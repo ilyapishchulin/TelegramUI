@@ -1,0 +1,66 @@
+.tgButton {
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+
+  outline: none;
+  border: none;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: var(--tg-theme-button-text-color);
+  background: var(--tg-theme-button-color);
+}
+
+.tgButton:hover {
+  opacity: .8;
+}
+
+.tgButton:active {
+  opacity: .6;
+}
+
+.tgButton[disabled] {
+  cursor: auto;
+  opacity: .25;
+}
+
+.tgButton--stretched {
+  width: 100%;
+}
+
+.tgButton--s {
+  height: 26px;
+  padding: 0 12px;
+
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+.tgButton--m {
+  height: 28px;
+  padding: 0 16px;
+}
+
+.tgButton--android.tgButton--m {
+  border-radius: 6px;
+}
+
+.tgButton--ios.tgButton--m {
+  border-radius: 28px;
+}
+
+.tgButton--l {
+  height: 48px;
+  padding: 0 20px;
+}
+
+.tgButton--android.tgButton--l {
+  border-radius: 4px;
+}
+
+.tgButton--ios.tgButton--l {
+  border-radius: 12px;
+}

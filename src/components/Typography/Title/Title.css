@@ -1,0 +1,53 @@
+.tgTitle {
+  margin: 0;
+}
+
+.tgTitle--l-1 {
+  font-size: 28px;
+}
+
+.tgTitle--android.tgTitle--l-1 {
+  line-height: 33px;
+}
+
+.tgTitle--ios.tgTitle--l-1 {
+  line-height: 34px;
+}
+
+.tgTitle--l-2 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.tgTitle--android.tgTitle--l-2 {
+  line-height: 26px;
+}
+
+.tgTitle--ios.tgTitle--l-2 {
+  line-height: 28px;
+}
+
+.tgTitle--l-3 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.tgTitle--android.tgTitle--l-3 {
+  line-height: 23px;
+}
+
+.tgTitle--ios.tgTitle--l-3 {
+  line-height: 25px;
+}
+
+.tgTitle--w-1 {
+  font-weight: 600;
+}
+
+.tgTitle--w-2 {
+  font-weight: 500;
+}
+
+.tgTitle--w-3 {
+  font-weight: 400;
+}

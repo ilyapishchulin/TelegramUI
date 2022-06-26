@@ -1,0 +1,23 @@
+.tgFootnote {
+  font-size: 13px;
+}
+
+.tgFootnote--android {
+  line-height: 15px;
+}
+
+.tgFootnote--ios {
+  line-height: 18px;
+}
+
+.tgFootnote--w-1 {
+  font-weight: 600;
+}
+
+.tgFootnote--w-2 {
+  font-weight: 500;
+}
+
+.tgFootnote--w-3 {
+  font-weight: 400;
+}

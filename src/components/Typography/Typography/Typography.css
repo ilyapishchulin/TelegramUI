@@ -1,0 +1,30 @@
+.tgTypography {
+  margin: 0;
+}
+
+h1.tgTypography--ios,
+h2.tgTypography--ios,
+h3.tgTypography--ios,
+h4.tgTypography--ios {
+  font-family: var(--tg-ios-heading-font);
+}
+
+.tgTypography--ios {
+  font-family: var(--tg-ios-font);
+}
+
+.tgTypography--android {
+  font-family: var(--tg-android-font);
+}
+
+.tgTypography--regular {
+  font-weight: 400;
+}
+
+.tgTypography--medium {
+  font-weight: 500;
+}
+
+.tgTypography--semibold {
+  font-weight: 600;
+}
